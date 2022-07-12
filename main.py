@@ -1,7 +1,8 @@
-from tkinter import *
+import tkinter as tk
 from tkinter import messagebox
 
-root = Tk()
+
+root = tk.Tk()
 root.geometry("300x297")
 root.title("Tic Tac Toe")
 
@@ -25,15 +26,15 @@ def click(b):
         messagebox.showerror("Error", "That spot is already occupied.")
 
 
-b1 = Button(root, text="", width=9, height=5, command=lambda: click(b1))
-b2 = Button(root, text="", width=9, height=5, command=lambda: click(b2))
-b3 = Button(root, text="", width=9, height=5, command=lambda: click(b3))
-b4 = Button(root, text="", width=9, height=5, command=lambda: click(b4))
-b5 = Button(root, text="", width=9, height=5, command=lambda: click(b5))
-b6 = Button(root, text="", width=9, height=5, command=lambda: click(b6))
-b7 = Button(root, text="", width=9, height=5, command=lambda: click(b7))
-b8 = Button(root, text="", width=9, height=5, command=lambda: click(b8))
-b9 = Button(root, text="", width=9, height=5, command=lambda: click(b9))
+b1 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b1))
+b2 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b2))
+b3 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b3))
+b4 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b4))
+b5 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b5))
+b6 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b6))
+b7 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b7))
+b8 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b8))
+b9 = tk.Button(root, text="", width=9, height=5, command=lambda: click(b9))
 b1.grid(row=0, column=0)
 b2.grid(row=0, column=1)
 b3.grid(row=0, column=2)
@@ -46,15 +47,15 @@ b9.grid(row=2, column=2)
 
 
 def disable():
-    b1.config(state=DISABLED)
-    b2.config(state=DISABLED)
-    b3.config(state=DISABLED)
-    b4.config(state=DISABLED)
-    b5.config(state=DISABLED)
-    b6.config(state=DISABLED)
-    b7.config(state=DISABLED)
-    b8.config(state=DISABLED)
-    b9.config(state=DISABLED)
+    b1.config(state=tk.DISABLED)
+    b2.config(state=tk.DISABLED)
+    b3.config(state=tk.DISABLED)
+    b4.config(state=tk.DISABLED)
+    b5.config(state=tk.DISABLED)
+    b6.config(state=tk.DISABLED)
+    b7.config(state=tk.DISABLED)
+    b8.config(state=tk.DISABLED)
+    b9.config(state=tk.DISABLED)
 
 
 def win():
